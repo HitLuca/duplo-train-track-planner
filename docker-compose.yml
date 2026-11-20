@@ -1,0 +1,14 @@
+name: trenino
+
+services:
+  trenino:
+    build: .
+    container_name: trenino
+    ports:
+      - "8080:8080"
+    volumes:
+      - trenino-data:/data
+    restart: unless-stopped
+
+volumes:
+  trenino-data:
