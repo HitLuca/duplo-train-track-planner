@@ -2,6 +2,7 @@ FROM python:3.12-slim
 
 WORKDIR /srv
 COPY server.py ./
+COPY backend ./backend
 COPY app ./app
 
 ENV PORT=8080 \
